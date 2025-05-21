@@ -1,0 +1,4 @@
+**Description**: Reserved bits are labeled as such so they can be allocated for a later purpose. They are not to do anything in the current design. However, designers might want to use these bits to debug or control/configure a future capability to help minimize time to market (TTM). If the logic being controlled by these bits is still enabled in production, an adversary could use the logic to induce unwanted/unsupported behavior in the hardware.
+**Extended Description**: ::NATURE:ChildOf:CWE ID:710:VIEW ID:1000:ORDINAL:Primary::
+**Detection Methods**: ::PHASE:Architecture and Design Implementation:DESCRIPTION:Include a feature to disable reserved bits.::PHASE:Integration:DESCRIPTION:Any writes to these reserve bits are blocked (e.g., ignored, access-protected, etc.), or an exception can be asserted.::
+**Potential Mitigations**: nan

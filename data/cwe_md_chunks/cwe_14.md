@@ -1,0 +1,4 @@
+**Description**: After initial reset, System-on-Chip (SoC) fabric access controls and other security features need to be programmed by trusted firmware as part of the boot sequence. If untrusted IPs or peripheral microcontrollers are enabled first, then the untrusted component can master transactions on the hardware bus and target memory or other assets to compromise the SoC boot firmware.
+**Extended Description**: ::NATURE:ChildOf:CWE ID:696:VIEW ID:1000:ORDINAL:Primary::
+**Detection Methods**: ::PHASE:Architecture and Design:DESCRIPTION:The boot sequence should enable fabric access controls and memory protections before enabling third-party hardware IPs and peripheral microcontrollers that use untrusted firmware.::
+**Potential Mitigations**: nan

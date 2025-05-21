@@ -1,0 +1,4 @@
+**Description**: Few fabrics mirror memory and address ranges, where mirrored regions contain copies of the original data. This redundancy is used to achieve fault tolerance. Whatever protections the fabric firewall implements for the original region should also apply to the mirrored regions. If not, an attacker could bypass existing read/write protections by reading from/writing to the mirrored regions to leak or corrupt the original data.
+**Extended Description**: ::NATURE:ChildOf:CWE ID:284:VIEW ID:1000:ORDINAL:Primary::NATURE:PeerOf:CWE ID:1251:VIEW ID:1194::
+**Detection Methods**: ::PHASE:Architecture and Design:DESCRIPTION:The fabric firewall should apply the same protections as the original region to the mirrored regions.::PHASE:Implementation:DESCRIPTION:The fabric firewall should apply the same protections as the original region to the mirrored regions.::
+**Potential Mitigations**: nan

@@ -1,0 +1,4 @@
+**Description**: Many cryptographic hardware units depend upon other hardware units to supply information to them to produce a securely encrypted result. For example, a cryptographic unit that depends on an external random-number-generator (RNG) unit for entropy must wait until the RNG unit is producing random numbers. If a cryptographic unit retrieves a private encryption key from a fuse unit, the fuse unit must be up and running before a key may be supplied.
+**Extended Description**: ::NATURE:ChildOf:CWE ID:696:VIEW ID:1000:ORDINAL:Primary::NATURE:ChildOf:CWE ID:665:VIEW ID:1000::
+**Detection Methods**: ::PHASE:Architecture and Design:DESCRIPTION:Best practices should be used to design cryptographic systems.::PHASE:Implementation:DESCRIPTION:Continuously ensuring that cryptographic inputs are supplying valid information is necessary to ensure that the encrypted output is secure.::
+**Potential Mitigations**: nan

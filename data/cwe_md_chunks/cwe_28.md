@@ -1,0 +1,4 @@
+**Description**: A common design practice is to use undocumented bits on a device that can be used to disable certain functional security features. These bits are commonly referred to as chicken bits. They can facilitate quick identification and isolation of faulty components, features that negatively affect performance, or features that do not provide the required controllability for debug and test. Another way to achieve this is through implementation of undocumented features. An attacker might exploit these interfaces for unauthorized access.
+**Extended Description**: ::NATURE:ChildOf:CWE ID:912:VIEW ID:1000:ORDINAL:Primary::
+**Detection Methods**: ::PHASE:Architecture and Design Implementation:DESCRIPTION:The implementation of chicken bits in a released product is highly discouraged. If implemented at all, ensure that they are disabled in production devices. All interfaces to a device should be documented.:EFFECTIVENESS:High::
+**Potential Mitigations**: nan
